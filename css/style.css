@@ -91,6 +91,39 @@ footer{background:var(--muted);padding:18px;text-align:center}
 	.contact-form{padding:14px}
 }
 
+/* -----------------------------
+	 Styles spécifiques: page Formations
+	 ----------------------------- */
+.page-formations main{background:linear-gradient(180deg,rgba(246,245,243,0.6),transparent)}
+.page-formations h1{font-family:'Playfair Display',serif;font-size:34px;margin-bottom:8px;color:var(--black)}
+.page-formations p{color:#333;margin-bottom:14px}
+
+.page-formations .formation-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+.page-formations .formation-cards .card{background:var(--white);padding:20px;border-radius:10px;border:1px solid rgba(11,11,11,0.05);box-shadow:0 6px 18px rgba(11,11,11,0.04);transition:transform .18s ease,box-shadow .18s ease}
+.page-formations .formation-cards .card h3{font-size:18px;margin-bottom:6px;color:var(--black)}
+.page-formations .formation-cards .card p{margin:6px 0;color:#444}
+.page-formations .formation-cards .card:hover{transform:translateY(-6px);box-shadow:0 14px 28px rgba(11,11,11,0.08)}
+.page-formations .formation-cards .card .btn{margin-top:10px}
+
+.page-formations .faq{margin-top:22px}
+.page-formations .faq .card{padding:14px;background:linear-gradient(90deg,rgba(212,175,55,0.03),transparent);border-left:4px solid var(--gold)}
+
+/* Responsive adjustments spécifiques */
+@media (max-width:1000px){
+	.page-formations .formation-cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+	.page-formations .formation-cards{grid-template-columns:1fr;gap:14px}
+	.page-formations h1{font-size:26px}
+	.page-formations main{padding-bottom:18px}
+}
+
+/* Ensure lists and text blocks are aligned */
+.page-formations .formation-cards .card ul{padding-left:18px;margin:8px 0}
+
+/* Accessibility: focus states for CTAs */
+.page-formations .btn:focus{outline:3px solid rgba(194,39,45,0.14);outline-offset:3px}
+
 @media (prefers-reduced-motion:reduce){
 	*{transition:none!important}
 }
