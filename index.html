@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atelier de Couture — Accueil</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <div class="brand">
+      <div class="logo-placeholder" aria-hidden="true">GTB</div>
+      <a class="sr-only" href="index.html">Atelier GTB — Accueil</a>
+    </div>
+    <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="formations.html">Formations</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>GTB — Confection & Formation</h1>
+        <p class="lead">Créations sur mesure, retouches expertes et formations professionnelles.</p>
+        <p class="hero-cta"><a class="btn primary" href="contact.html">Demander un devis</a> <a class="btn outline" href="formations.html">Voir les formations</a></p>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="placeholder-img">Image</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Nos services</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Confection sur mesure</h3>
+        <p>Robe de mariée, costumes ou prêt-à-porter sur-mesure, finitions soignées.</p>
+      </article>
+      <article class="card">
+        <h3>Retouches & réparations</h3>
+        <p>Retouches rapides et précises pour tous types d'étoffes.</p>
+      </article>
+      <article class="card">
+        <h3>Formations</h3>
+        <p>Cours pour débutants et parcours professionnels certifiants.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="formations-teaser">
+    <h2>Formations à la une</h2>
+    <div class="formation-list">
+      <div class="formation">
+        <h4>Initiation couture</h4>
+        <p>6 semaines — apprendre à coudre vos premiers vêtements.</p>
+      </div>
+      <div class="formation">
+        <h4>Perfectionnement pro</h4>
+        <p>Programme intensif pour travailler en atelier.</p>
+      </div>
+    </div>
+    <p class="see-more"><a href="formations.html" class="btn outline small">Toutes les formations</a></p>
+  </section>
+
+  <section class="gallery-preview">
+    <h2>Galerie</h2>
+    <div class="grid">
+      <div class="thumb">Pièce 1</div>
+      <div class="thumb">Pièce 2</div>
+      <div class="thumb">Pièce 3</div>
+      <div class="thumb">Pièce 4</div>
+    </div>
+    <p class="see-more"><a href="galerie.html" class="btn outline small">Voir la galerie</a></p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Témoignages</h2>
+    <blockquote>"Superbe pédagogie et finitions parfaites — je recommande !" — Sophie</blockquote>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Atelier de Couture</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
